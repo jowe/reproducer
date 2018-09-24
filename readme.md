@@ -1,11 +1,10 @@
 
 Reproducer code to show that since payara 4.1.2.182 and 5.182
-the introduces opentracing module inteferes with application provided
+which introduces opentracing module interferes with application provided
 JAX-RS exception mappers. 
 
 
 # Description
-
 
 Application provided REST ExceptionMapper ist not called aynmore (perhaps due to new OpenTracing module)
 
