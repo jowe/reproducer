@@ -3,6 +3,7 @@ Reproducer code to show that since payara 4.1.2.182 and 5.182
 which introduces opentracing module interferes with application provided
 JAX-RS exception mappers. 
 
+Following the the payara bug report form:
 
 # Description
 
@@ -66,6 +67,7 @@ java.lang.RuntimeException: my test exception
 
 
 ## Steps to reproduce (Only for bug reports) 
+Reproducer code and https://github.com/jowe/reproducer 
 Deplyoy reproducer.war
 
 Call: http://localhost:8080/reproducer/rest/throwex
