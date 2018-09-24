@@ -4,7 +4,7 @@ the introduces opentracing module inteferes with application provided
 JAX-RS exception mappers. 
 
 
-#Description
+# Description
 
 
 Application provided REST ExceptionMapper ist not called aynmore (perhaps due to new OpenTracing module)
@@ -32,7 +32,7 @@ compete, JAX-RS/Jersey will only choose one (randomly) - during CDI statrup.
 
 So we see correct and wrong behaviours:
 
-###Correct
+### Correct
 **Behaviour:** Our ExceptionMapper is called.
 
 **Output:**
@@ -49,7 +49,7 @@ AppMapperCalled
  ```
 
 
-###Wrong
+### Wrong
 **Behaviour:** Our ExceptionMapper is _not_ called.
 
 **Output:**
@@ -72,12 +72,6 @@ Deplyoy reproducer.war
 Call: http://localhost:8080/reproducer/rest/throwex
 
 Since the behaviour is random your have to restart your damain to see both behaviours.
-
-### Samples
-
-TBD
-
-## Context (Optional)
 
 
 ## Environment ##
