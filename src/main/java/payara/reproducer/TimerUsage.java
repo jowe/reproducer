@@ -21,11 +21,14 @@ public class TimerUsage {
     private TimerService timerService;
 
     @GET
-    public void getAllTimers() {
+    public String getAllTimers() {
         final Collection<Timer> allTimers = timerService.getAllTimers();
         for (final Timer timer : allTimers) {
+            LOG.info("before get Info");
             final Serializable info = timer.getInfo();
+            LOG.info("after get Info");
         }
+        return "OK";
     }
 
 
